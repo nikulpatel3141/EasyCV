@@ -1,0 +1,101 @@
+// links, contact info, etc
+#let config = toml("config.toml")
+
+#let links = (
+  link("mailto:" + config.email),
+  link("tel:" + config.phone),
+  link(config.github),
+)
+
+// page layout
+
+#set page(margin: 0.5in, paper: "a4")
+#set text(font: config.font, size: config.size * 1pt, lang: "eng")
+#set par(justify: true, leading: 0.7em)
+#set line(start: (-0.125em, 0em), end: (100% + 0.125em, 0em), stroke: 0.375pt)
+#show link: underline
+#set table(
+  stroke: 0em,
+  inset: (left: 0.0em, right: 0.0em, top: 0em, bottom: 0em),
+  row-gutter: 0.8em,
+  column-gutter: 1.2em,
+)
+#show table.cell.where(x: 0): strong
+
+// CV header formatting
+
+#show heading.where(level: 1): it => [
+  #set align(center)
+  #set text(size: 18pt)
+  #upper([#it])
+]
+
+#show heading.where(level: 2): it => [
+  #set text(size: 14pt)
+  #pad(upper([#it]), bottom: -10pt)
+  #line()
+]
+
+#let sub_header(title: "", remark: "", dates: ()) = {
+  [#strong(title), #emph(remark) #h(1fr) #emph([#dates.join(" - ")])]
+}
+
+// content
+
+= #config.name
+
+#align(center, [#links.join(" | ")])
+
+== Experience
+
+#sub_header(
+  title: "Pied Piper, San Francisco",
+  remark: "VP of Architecture & Security",
+  dates: ("Jul 2014", "Aug 2018"),
+)
+- Implemented a revolutionary peer-to-peer decentralized internet infrastructure
+- Designed security protocols for a distributed computing platform serving millions
+- Developed custom network monitoring tools resulting in 99.99% uptime
+- Led a team of system engineers and security specialists
+- Implemented sophisticated DDoS protection systems
+- Optimized server performance through custom distributed computing solutions
+
+
+#sub_header(
+  title: "Endframe, San Francisco",
+  remark: "Senior Systems Engineer",
+  dates: ("Jul 2013", "Jun 2014"),
+)
+- Designed and maintained distributed computing architecture
+- Implemented security protocols for video compression platform
+- Managed server infrastructure and optimization
+
+
+== Education
+
+#sub_header(
+  title: "University of Waterloo",
+  remark: "B.S. Computer Science",
+  dates: ("Oct 2005", "Jun 2009"),
+)
+- Full scholarship based on programming aptitude
+- Focus on Security and Distributed Systems
+
+
+== Skills
+
+#table(
+  columns: 2,
+  "Languages", "C++, Python, Java, Assembly",
+  "Tools", "AWS, Docker, Kubernetes",
+)
+
+
+== Certifications
+
+#table(
+  columns: (auto, auto, 1fr),
+  align: (auto, auto, right),
+  "DEFCON CTF", "1st Place, Individual Category", emph("2017"),
+  "University of Waterloo", "Outstanding Computer Science Graduate Award (2009)", emph("2009"),
+)
