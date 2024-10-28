@@ -1,5 +1,6 @@
-// links, contact info, etc
 #let config = toml("config.toml")
+
+// contact info displayed below your name
 
 #let links = (
   link("mailto:" + config.email),
@@ -22,7 +23,7 @@
 )
 #show table.cell.where(x: 0): strong
 
-// CV header formatting
+// header formatting
 
 #show heading.where(level: 1): it => [
   #set align(center)

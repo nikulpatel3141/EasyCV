@@ -1,11 +1,6 @@
 #let config = toml("config.toml")
 
-#let name = config.name
-#let links = (
-  email: link("mailto:" + config.email),
-  phone: link("tel:" + config.phone),
-)
-#let date = datetime(year: 2022, month: 9, day: 14)
+#let letter_date = [20#super[th] September 2024]
 
 // page layout
 
@@ -15,21 +10,20 @@
 #set list(marker: "", body-indent: 0em)
 #show link: underline
 
-
-#let letter_date = [20#super[th] September 2024]
-
 // your details
+
 #h(1fr) #box[
   #set align(left)
-  - #name
-  - #links.email
-  - #links.phone
+  - #config.name
+  - #link("mailto:" + config.email)
+  - #link("tel:" + config.phone)
   - #letter_date
 ]
 
 #v(1em)
 
 // their details
+
 - Santa Claus and Co
 - 123 Elf Road
 - North Pole
@@ -49,4 +43,4 @@ At Pied Piper, I served as VP of Architecture & Security, where I designed and i
   Yours faithfully,
 ]
 
-#name
+#config.name
