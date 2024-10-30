@@ -12,7 +12,7 @@ Recommended only when not using Git.
 ## Recommended Usage - VS Code
 
 1. Fork this repo (remember to make it private!)
-2. Install the `Tinymist Typst` extension
+2. Open VS Code and install the `Tinymist Typst` extension
 3. Edit the `src/` files and live preview using `>Typst Preview: Preview current file` (open the prompt using `Ctrl + Shift + P`)
 4. Compile your files using `>Typst: Export the currently open file as PDF`
 
