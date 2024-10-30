@@ -1,0 +1,17 @@
+name: Render paper.pdf
+on: push
+jobs:
+  render-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v3
+      - run: |
+          for input_file in src/*.typ; do
+            typst compile ${input_file} "build/$(basename -s .typ $input_file).pdf"
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pdfs
+          path: build/*.pdf
