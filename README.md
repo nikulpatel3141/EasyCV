@@ -2,14 +2,14 @@
 
 Simple Typst CV + Cover Letter templates.
 
-## Quickstart (Typst.app)
+## Quickstart - Typst.app
 
-Recommended when not using Git.
+Recommended only when not using Git.
 
 1. Create a project on [typst.app](https://typst.app/)
 2. Copy-paste the content from [here](/src/CV.typ) to your project
 
-## Recommended Usage (VS Code)
+## Recommended Usage - VS Code
 
 1. Fork this repo (remember to make it private!)
 2. Install the `Tinymist Typst` extension
