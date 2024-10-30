@@ -1,17 +1,17 @@
-#let config = toml("config.toml")
+#let name = "Bertram Gilfoyle"
 
 // contact info displayed below your name
 
 #let links = (
-  link("mailto:" + config.email),
-  link("tel:" + config.phone),
-  link(config.github),
+  link("mailto:bgilfoyle@protonmail.ch"),
+  link("tel:(415) 123-4567"),
+  link("github.com/gilfoyle123"),
 )
 
 // page layout
 
 #set page(margin: 0.5in, paper: "a4")
-#set text(font: config.font, size: config.size * 1pt, lang: "eng")
+#set text(font: "New Computer Modern", size: 12pt, lang: "eng")
 #set par(justify: true, leading: 0.7em)
 #set line(start: (-0.125em, 0em), end: (100% + 0.125em, 0em), stroke: 0.375pt)
 #show link: underline
@@ -43,7 +43,7 @@
 
 // content
 
-= #config.name
+= #name
 
 #align(center, [#links.join(" | ")])
 

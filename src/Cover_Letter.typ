@@ -1,11 +1,13 @@
-#let config = toml("config.toml")
+#let name = "Bertram Gilfoyle"
+#let email = "bgilfoyle@protonmail.ch"
+#let phone = "(415) 123-4567"
 
 #let letter_date = [20#super[th] September 2024]
 
 // page layout
 
 #set page(margin: 1.2in, paper: "a4")
-#set text(font: config.font, size: config.size * 1pt, lang: "eng")
+#set text(font: "New Computer Modern", size: 12pt, lang: "eng")
 #set par(justify: true, first-line-indent: 2em)
 #set list(marker: "", body-indent: 0em)
 #show link: underline
@@ -14,9 +16,9 @@
 
 #h(1fr) #box[
   #set align(left)
-  - #config.name
-  - #link("mailto:" + config.email)
-  - #link("tel:" + config.phone)
+  - #name
+  - #link("mailto:" + email)
+  - #link("tel:" + phone)
   - #letter_date
 ]
 
@@ -43,4 +45,4 @@ At Pied Piper, I served as VP of Architecture & Security, where I designed and i
   Yours faithfully,
 ]
 
-#config.name
+#name
