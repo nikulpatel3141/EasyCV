@@ -60,7 +60,6 @@
 - Implemented sophisticated DDoS protection systems
 - Optimized server performance through custom distributed computing solutions
 
-
 #sub_header(
   title: "Endframe, San Francisco",
   remark: "Senior Systems Engineer",
@@ -70,6 +69,14 @@
 - Implemented security protocols for video compression platform
 - Managed server infrastructure and optimization
 
+#sub_header(
+  title: "Various Startups, Toronto, Canada",
+  remark: "Security Consultant",
+  dates: ("2009", "Jun 2013"),
+)
+- Provided security auditing and penetration testing services
+- Implemented secure network architectures
+- Developed custom security solutions for diverse client needs
 
 == Education
 
@@ -81,7 +88,6 @@
 - Full scholarship based on programming aptitude
 - Focus on Security and Distributed Systems
 
-
 == Skills
 
 #table(
@@ -90,8 +96,7 @@
   "Tools", "AWS, Docker, Kubernetes",
 )
 
-
-== Certifications
+== Awards
 
 #table(
   columns: (auto, auto, 1fr),
@@ -99,3 +104,10 @@
   "DEFCON CTF", "1st Place, Individual Category", emph("2017"),
   "University of Waterloo", "Outstanding Computer Science Graduate Award (2009)", emph("2009"),
 )
+
+== Certifications
+
+- Certified Information Systems Security Professional (CISSP)
+- Offensive Security Certified Professional (OSCP)
+- AWS Certified Solutions Architect
+- Certified Ethical Hacker (CEH)

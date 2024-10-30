@@ -2,38 +2,24 @@
 
 Simple Typst CV + Cover Letter templates.
 
+## Quickstart (Typst.app)
 
-# Showcase
+Recommended when not using Git.
 
-| Source                   | Output                        |
-| ------------------------ | ----------------------------- |
-| ![](/src/CV.typ?plain=1) | ![CV](/assets/samples/CV.png) |
+1. Create a project on [typst.app](https://typst.app/)
+2. Copy-paste the content from [here](/src/CV.typ) to your project
 
+## Recommended Usage (VS Code)
 
-# Usage
+1. Fork this repo (remember to make it private!)
+2. Install the `Tinymist Typst` extension
+3. Edit the `src/` files and live preview using `>Typst Preview: Preview current file` (open the prompt using `Ctrl + Shift + P`)
+4. Compile your files using `>Typst: Export the currently open file as PDF`
 
-## VS Code
+Note: On every commit a GitHub Action will build PDFs for each file in `src/` and upload them. See [here](https://github.com/nikulpatel3141/EasyCV/actions/runs/11593443428) for an example. If you don't want this just delete the `.github` directory.
 
-Ctrl + Shift + P
+# Preview
 
->Typst: Export the currently open file as PDF
+![CV](/assets/samples/CV.png)
 
->Typst Preview: Preview current file
-
-
-## Typst.app
-
-
-## Command Line
-
-
-```bash`
-sudo apt install texlive  # 252 Mb
-
-sudo apt install texlive-latex-extra  # 135 Mb
-
-
-pdflatex ...
-
-
-```
+![Cover Letter](/assets/samples/Cover_Letter.png)
