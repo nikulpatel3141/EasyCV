@@ -1,4 +1,4 @@
-name: Render paper.pdf
+name: Render Files
 on: push
 jobs:
   render-paper:
@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: typst-community/setup-typst@v3
       - run: |
-          rm -r build/
+          rm -rf build/
           mkdir build
 
           for input_file in src/*.typ; do
