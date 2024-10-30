@@ -1,6 +1,36 @@
 # EasyCV
 
-Write a great looking CV + Cover Letter with minimal effort using Typst 
+Simple Typst CV + Cover Letter templates.
+
+
+# Showcase
+
+| Source        | Output                        |
+| ------------- | ----------------------------- |
+| (/src/CV.typ) | ![CV](/assets/samples/CV.pdf) |
+
+
+
+
+
+
+
+# Usage
+
+## VS Code
+
+Ctrl + Shift + P
+
+>Typst: Export the currently open file as PDF
+
+>Typst Preview: Preview current file
+
+
+## Typst.app
+
+
+## Command Line
+
 
 ```bash`
 sudo apt install texlive  # 252 Mb

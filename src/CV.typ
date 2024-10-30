@@ -1,7 +1,6 @@
+// edit these
+
 #let name = "Bertram Gilfoyle"
-
-// contact info displayed below your name
-
 #let links = (
   link("mailto:bgilfoyle@protonmail.ch"),
   link("tel:(415) 123-4567"),
@@ -10,8 +9,8 @@
 
 // page layout
 
-#set page(margin: 0.5in, paper: "a4")
 #set text(font: "New Computer Modern", size: 12pt, lang: "eng")
+#set page(margin: 0.5in, paper: "a4")
 #set par(justify: true, leading: 0.7em)
 #set line(start: (-0.125em, 0em), end: (100% + 0.125em, 0em), stroke: 0.375pt)
 #show link: underline

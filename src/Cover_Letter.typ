@@ -1,3 +1,5 @@
+// edit these
+
 #let name = "Bertram Gilfoyle"
 #let email = "bgilfoyle@protonmail.ch"
 #let phone = "(415) 123-4567"
