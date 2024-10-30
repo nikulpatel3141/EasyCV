@@ -5,14 +5,9 @@ Simple Typst CV + Cover Letter templates.
 
 # Showcase
 
-| Source        | Output                        |
-| ------------- | ----------------------------- |
-| (/src/CV.typ) | ![CV](/assets/samples/CV.pdf) |
-
-
-
-
-
+| Source          | Output                        |
+| --------------- | ----------------------------- |
+| [](/src/CV.typ) | ![CV](/assets/samples/CV.png) |
 
 
 # Usage
