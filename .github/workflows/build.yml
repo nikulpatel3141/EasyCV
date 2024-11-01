@@ -15,8 +15,6 @@ jobs:
           done
 
       - uses: actions/upload-artifact@v4
-        env:
-          BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
         with:
-          name: EasyCV_${BRANCH_NAME}_pdfs
+          name: EasyCV_${{ github.head_ref || github.ref_name }}_pdfs
           path: build/*.pdf
