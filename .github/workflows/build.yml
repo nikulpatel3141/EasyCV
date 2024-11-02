@@ -10,7 +10,7 @@ jobs:
           rm -rf build/
           mkdir build
 
-          for input_file in src/*.typ; do
+          for input_file in *.typ; do
             typst compile ${input_file} "build/$(basename -s .typ $input_file).pdf"
           done
 
