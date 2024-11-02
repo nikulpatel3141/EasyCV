@@ -1,6 +1,4 @@
-# EasyCV
-
-Simple Typst CV + Cover Letter templates.
+Typst CV + Cover Letter templates. Easy to use and customise.
 
 ## Quickstart - Typst.app
 

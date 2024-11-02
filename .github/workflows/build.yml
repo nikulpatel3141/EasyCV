@@ -16,5 +16,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: pdfs
+          name: EasyCV_${{ github.head_ref || github.ref_name }}_pdfs
           path: build/*.pdf
