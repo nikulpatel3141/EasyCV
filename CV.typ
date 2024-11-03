@@ -72,7 +72,7 @@
 #sub_header(
   title: "Various Startups, Toronto, Canada",
   remark: "Security Consultant",
-  dates: ("2009", "Jun 2013"),
+  dates: ("Jul 2009", "Jun 2013"),
 )
 - Provided security auditing and penetration testing services
 - Implemented secure network architectures
