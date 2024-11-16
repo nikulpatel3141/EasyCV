@@ -1,5 +1,3 @@
-Typst CV + Cover Letter templates. Easy to use and customise.
-
 ## Quickstart - Typst.app
 
 Recommended only when not using Git.
